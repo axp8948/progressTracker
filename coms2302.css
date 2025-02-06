@@ -1,0 +1,319 @@
+/* Basic reset for margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container styling */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header styling */
+header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+/* For the current time display - FLIP CLOCK*/
+
+  #clock {
+    display: flex;
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    color: #fff;
+    height: 0px;
+
+  }
+
+  .flip-card {
+      position: relative;
+          width: 84px;
+          height: 100px;
+          margin: 6px 1px;
+          perspective: 1000px;
+      
+  }
+
+  .flip-card .top,
+  .flip-card .bottom {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    background-color: #007bff;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    font-weight: bold;
+    overflow: hidden;
+  }
+
+  .flip-card .top {
+    transform-origin: bottom;
+    top: 0;
+    transform: rotateX(0deg);
+  }
+
+  .flip-card .bottom {
+    transform-origin: top;
+    bottom: 0;
+    transform: rotateX(90deg);
+  }
+
+  .flip {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    background-color: #007bff;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    font-weight: bold;
+    overflow: hidden;
+    top: 0;
+    transform-origin: bottom;
+  }
+
+  .flip.animate {
+    animation: flip 0.5s forwards;
+  }
+
+  @keyframes flip {
+    0% {
+        transform: rotateX(0deg);
+    }
+    100% {
+        transform: rotateX(-90deg);
+    }
+  }
+
+
+.home-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    background-color: #28a745;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.home-link:hover {
+    background-color: #218838;
+}
+
+/* Main content styling */
+main {
+    margin-top: 20px;
+}
+
+/* Class Lecture Section */
+.lecture {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+#activities{
+    background-color: #007bff;
+    color: white;
+    border: none;
+    margin-left: 27px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.activity-div{
+    margin-left: 470px;
+}
+
+
+.timer {
+    text-align: center;
+}
+
+#start-timer {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+#start-timer:hover {
+    background-color: #0056b3;
+}
+
+#timer-display {
+    font-size: 2em;
+    margin-top: 10px;
+}
+
+.notes-container{
+    display: flex;
+    margin-top: 30px;
+    height: 350px;
+}
+
+
+/* Note submit button customization */
+#note-btn{
+    margin-left: 230px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+#note-btn:hover {
+    background-color: #0056b3;
+}
+
+.notes-display-container{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    width: 50%;
+    margin-left: 10px;
+    height:330px;
+    overflow-y: auto;
+}
+
+/* Notes Section */
+.notes {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    width: 50%;
+}
+
+#notes-area {
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+/* Progress Chart Section */
+.progress-chart {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+canvas {
+    width: 100%;
+    height: 400px; /* Adjust height as needed */
+}
+
+
+
+
+
+/* Reminder Section Styling  */
+.reminder-container {
+    width: 100%;
+    margin: auto;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+}
+
+.reminder-creator{
+    width: 30%;
+}
+.reminder-container h2 {
+    text-align: center;
+}
+.reminder-container input,
+.reminder-container button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+.reminder-list {
+    margin-left: 20px;
+    width: 100%;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 245px;
+    overflow-y: auto; /* Make the list scrollable */
+    
+}
+.reminder-list h2 {
+    text-align: center;
+}
+.reminder-item {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+#add-reminder-btn{
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+#add-reminder-btn:hover{
+    background-color: #0056b3;
+}

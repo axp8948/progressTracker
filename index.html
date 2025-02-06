@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <!-- NavBar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="#" class="navbar-brand">MySite</a>
+      <ul class="navbar-menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="navbar-toggle">☰</button>
+    </div>
+  </nav>
+
+  <!-- To fetch the Random Jokes -->
+  <div class = "jokes-container">
+    <div id="jokes"></div>
+    <button id="show-punchline">Show Punchline</button>
+  </div>
+
+
+  <!-- Track Your Progress -->
+  <div class = "tracker-container">
+    <div id = "mental" onclick="redirectToMentalTracker()">Track Your Mental Progress</div>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>

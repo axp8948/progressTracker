@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Details</title>
+    <link rel="stylesheet" href="coms2302.css">
+    <!-- Include Chart.js for the progress chart -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Class Details</h1>
+            <nav>
+                <a href="index.html" class="home-link">Back to Home</a>
+            </nav>
+        </header>
+        <main>
+            <!-- Class Lecture Section -->
+            <!-- <section class="lecture">
+                <h2>Class Lecture</h2> -->
+            <div class="activity-div">
+                <label for="activitiesOptions">
+                    <h2>Choose an Activity</h2>
+                </label>
+                <select name="activities" id="activities">
+                    <option value="lecture">Class Lecture</option>
+                    <option value="assignment">Assignment</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <!-- Flip Clock -->
+            <div class="current-time">
+                <h2>Current Time</h2>
+                <div id="clock">
+                    <div class="flip-card" id="hours">
+                        <div class="top"></div>
+                        <div class="bottom"></div>
+                        <div class="flip"></div>
+                    </div>
+                    <div class="flip-card" id="minutes">
+                        <div class="top"></div>
+                        <div class="bottom"></div>
+                        <div class="flip"></div>
+                    </div>
+                    <div class="flip-card" id="seconds">
+                        <div class="top"></div>
+                        <div class="bottom"></div>
+                        <div class="flip"></div>
+                    </div>
+                </div>
+
+                <!-- timer -->
+            </div>
+            <div class="timer">
+                <button id="start-timer">Start Timer</button>
+                <p id="timer-display">00:00:00</p>
+            </div>
+            </section>
+
+            <!-- Notes Section -->
+            <div class="notes-container">
+                <section class="notes">
+                    <h2>Notes</h2>
+                    <textarea id="notes-area" placeholder="Write your notes here..."></textarea>
+                    <button id = "note-btn">Submit</button>
+                </section>
+                <div class = "notes-display-container">
+                    <h2>Your Notes</h2>
+                    <div class = "notes-display" id = "notes-display"></div>
+                    </div>
+                </div>
+
+
+            <!-- Reminders Section -->
+            <div class = "reminder-container">
+                <div class = "reminder-creator">
+                    <h2>Create a Reminder</h2>
+                    <input type="text" id="reminder-title" placeholder="Reminder Title">
+                    <input type="date" id="reminder-date">
+                    <button id="add-reminder-btn">Add Reminder</button>
+                </div>
+                
+
+                <div class="reminder-list" id="reminder-list">
+                    <h2>Your Reminders</h2>
+                    <!-- Reminders will be displayed here -->
+                </div>
+            </div>
+
+
+            <!-- Progress Chart Section -->
+            <section class="progress-chart">
+                <h2>Progress Chart</h2>
+                <canvas id="time-chart"></canvas>
+            </section>
+        </main>
+
+        <script src="coms2302.js"></script>
+    </div>
+</body>
+
+</html>
