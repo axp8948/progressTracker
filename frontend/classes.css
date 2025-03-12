@@ -13,30 +13,65 @@ body {
     line-height: 1.6;
 }
 
-/* Container styling */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
 
 /* Header styling */
 header {
-    background-color: #007bff;
-    color: #fff;
+    background-color: #1c71d4;
+    color: white;
+    /* position: fixed; */
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px #333;
     padding: 20px;
     text-align: center;
-    border-radius: 8px;
-}
-
-header h1 {
-    margin-bottom: 10px;
-    font-size: 2em;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    height: 100px;
+    display: flex;
+    justify-content: center;  
+    align-items: center;  
 }
 
 nav {
+    display: flex;              
+    justify-content: space-between;  
+    width: 100%;               
+    padding: 0 20px;            
+}
+
+.nav-items {
+    display: flex;             
+    justify-content: flex-start; 
+    gap: 20px;
+}
+
+.current-time {
+    display: flex;              
+    justify-content: flex-end;
+    gap: 20px;   
+    justify-content: center;
+}
+
+.current-time h2{
     margin-top: 10px;
 }
+
+.home-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    background-color: #28a745;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.home-link:hover {
+    background-color: #218838;
+}
+
 
 /* For the current time display - FLIP CLOCK*/
 
@@ -123,7 +158,7 @@ nav {
     text-decoration: none;
     font-size: 1em;
     background-color: #28a745;
-    padding: 10px 20px;
+    padding: 10px 15px;
     border-radius: 5px;
     transition: background-color 0.3s;
 }
@@ -135,6 +170,8 @@ nav {
 /* Main content styling */
 main {
     margin-top: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
 /* Class Lecture Section */
@@ -159,7 +196,11 @@ main {
 }
 
 .activity-div{
-    margin-left: 470px;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
 }
 
 
@@ -176,6 +217,7 @@ main {
     cursor: pointer;
     font-size: 1em;
     transition: background-color 0.3s;
+    margin-top: 20px;
 }
 
 #start-timer:hover {
@@ -217,7 +259,7 @@ main {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
-    width: 50%;
+    width: 60%;
     margin-left: 10px;
     height:330px;
     overflow-y: auto;
@@ -230,7 +272,7 @@ main {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
-    width: 50%;
+    width: 40%;
 }
 
 #notes-area {
@@ -273,7 +315,7 @@ canvas {
 }
 
 .reminder-creator{
-    width: 30%;
+    width: 50%;
 }
 .reminder-container h2 {
     text-align: center;

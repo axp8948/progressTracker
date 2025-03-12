@@ -11,9 +11,9 @@ body {
 
 /* Navbar styling */
 .navbar {
-  background-color:#0056b3;
+  background-color: #1c71d4;
   color: white;
-  padding: 10px 0;
+  padding: 20px 0;
   position: fixed;
   width: 100%;
   top: 0;
@@ -104,12 +104,12 @@ body {
 #jokes {
   font-size: 1.2em;
   margin: 20px;
-  margin-top: 100px;
+  margin-top: 200px;
   padding: 20px;
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.3);
   width: 80%;
   max-width: 500px;
   text-align: center;
@@ -117,7 +117,7 @@ body {
 
 /* Styles for the punchline */
 #punchline {
-  margin-top: 10px;
+  margin-top: 20px;
   font-weight: bold;
   color: #555;
   display: none;
@@ -125,7 +125,7 @@ body {
 
 /* Styles for the show punchline button */
 #show-punchline {
-  margin-top: 0px;
+  margin-top: 20px;
   padding: 10px 20px;
   font-size: 1em;
   font-weight: bold;
@@ -135,6 +135,7 @@ body {
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s, transform 0.3s;
+  box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.3);
 }
 
 /* Button hover and active effects */
@@ -162,7 +163,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #bac5fd;          /* Card background color */
+    background-color: #23ccc4;          /* Card background color */
     border: 1px solid #ddd;          /* Border color and thickness */
     border-radius: 8px;              /* Rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
@@ -175,6 +176,7 @@ body {
     height: 100px;
     font-weight: bold;
     font-size: 20px;
+    box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.3);
 }
 
 #mental:hover {

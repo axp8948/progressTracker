@@ -5,35 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Class Details</title>
-    <link rel="stylesheet" href="coms2302.css">
+    <link rel="stylesheet" href="classes.css">
     <!-- Include Chart.js for the progress chart -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
 <body>
-    <div class="container">
         <header>
-            <h1>Class Details</h1>
             <nav>
-                <a href="index.html" class="home-link">Back to Home</a>
-            </nav>
-        </header>
-        <main>
-            <!-- Class Lecture Section -->
-            <!-- <section class="lecture">
-                <h2>Class Lecture</h2> -->
-            <div class="activity-div">
-                <label for="activitiesOptions">
-                    <h2>Choose an Activity</h2>
-                </label>
-                <select name="activities" id="activities">
-                    <option value="lecture">Class Lecture</option>
-                    <option value="assignment">Assignment</option>
-                    <option value="other">Other</option>
-                </select>
-            </div>
+                <div class="nav-items">
+                    <h1 id = "classTitle">Class Details</h1>
+                    <a href="index.html" class="home-link">Back to Home</a>
+                </div>
 
-            <!-- Flip Clock -->
+                <!-- Flip Clock -->
             <div class="current-time">
                 <h2>Current Time</h2>
                 <div id="clock">
@@ -53,6 +38,23 @@
                         <div class="flip"></div>
                     </div>
                 </div>
+            </nav>
+        </header>
+        <main>
+            <!-- Class Lecture Section -->
+            <!-- <section class="lecture">
+                <h2>Class Lecture</h2> -->
+            <div class="activity-div">
+                <label for="activitiesOptions">
+                    <h2>Choose an Activity</h2>
+                </label>
+                <select name="activities" id="activities">
+                    <option value="lecture">Class Lecture</option>
+                    <option value="assignment">Assignment</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
 
                 <!-- timer -->
             </div>
@@ -100,8 +102,7 @@
             </section>
         </main>
 
-        <script src="coms2302.js"></script>
-    </div>
+        <script src="classes.js"></script>
 </body>
 
 </html>
